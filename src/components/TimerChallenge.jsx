@@ -9,7 +9,6 @@ export default function TimerChallenge({ title, targetTime }) {
     const [timerStarted, setTimerStarted] = useState(false);
 
     function handleStart() {
-        console.log('timer clicked');
         timer.current = setTimeout(() => {
             setTimerExpired(true);
             dialog.current.showModal();
