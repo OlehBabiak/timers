@@ -12,7 +12,6 @@ export default function TimerChallenge({ title, targetTime }) {
     if (timeRemaining <= 0) {
         clearInterval(timer.current);
         dialog.current.open();
-        console.log('Time is up!');
     }
 
     function handleStart() {
@@ -24,7 +23,6 @@ export default function TimerChallenge({ title, targetTime }) {
     function handleStop() {
         clearInterval(timer.current);
         dialog.current.open();
-        console.log('Time is stopped!');
     };
 
     function handleReset() {
